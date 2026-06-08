@@ -88,7 +88,7 @@
 </div>
 </div>
 <!-- Bento Grid Layout -->
-<div class="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-gutter">
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-gutter">
 <!-- Web Dev -->
 <div class="md:col-span-2 md:row-span-2 glass-panel p-8 rounded-[24px] soft-shadow group hover:-translate-y-1 transition-transform duration-500">
 <div class="bg-primary/10 w-14 h-14 rounded-xl flex items-center justify-center mb-8 group-hover:bg-primary/20 transition-colors">
@@ -215,8 +215,13 @@
 </section>
 </main>
 <!-- Footer -->
-<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-outline-variant/20">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-outline-variant/20 relative overflow-hidden">
+<!-- Giant background text -->
+<div class="absolute bottom-0 left-0 w-full overflow-hidden flex items-end justify-center pointer-events-none opacity-[0.03] select-none z-0 pb-12">
+    <span class="font-display-lg font-black text-[18vw] leading-none text-on-surface whitespace-nowrap tracking-tighter uppercase">DDKTECH</span>
+</div>
+
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <div class="md:col-span-2">
 <div class="font-display-lg text-headline-sm font-bold text-on-surface mb-6">DDK Technologies &amp; Co.</div>
 <p class="font-body-md text-body-md text-on-secondary-container max-w-xs mb-8">
@@ -234,7 +239,7 @@
 <div>
 <h4 class="font-label-caps text-label-caps text-on-surface mb-6">NAVIGATE</h4>
 <ul class="space-y-4">
-<li><a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li><a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors" href="privacy-policy.html">Privacy Policy</a></li>
 <li><a class="font-body-md text-body-md text-on-secondary-container hover:text-primary transition-colors" href="#">Terms of Service</a></li>
 </ul>
 </div>
@@ -246,7 +251,7 @@
 </ul>
 </div>
 </div>
-<div class="mt-section-gap pt-8 border-t border-outline-variant/10 text-center px-margin-mobile">
+<div class="relative z-10 mt-section-gap pt-8 border-t border-outline-variant/10 text-center px-margin-mobile">
 <p class="font-body-md text-body-md text-outline">© 2026 DDK Technologies &amp; Co. All rights reserved</p>
 </div>
 </footer>

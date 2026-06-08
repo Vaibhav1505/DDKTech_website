@@ -125,8 +125,13 @@
 </div>
 </main>
 <!-- Footer -->
-<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-outline-variant/20">
-<div class="grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+<footer class="w-full py-section-gap bg-surface-container-lowest border-t border-outline-variant/20 relative overflow-hidden">
+<!-- Giant background text -->
+<div class="absolute bottom-0 left-0 w-full overflow-hidden flex items-end justify-center pointer-events-none opacity-[0.03] select-none z-0 pb-12">
+    <span class="font-display-lg font-black text-[18vw] leading-none text-on-surface whitespace-nowrap tracking-tighter uppercase">DDKTECH</span>
+</div>
+
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
 <div class="col-span-1 md:col-span-1">
 <div class="font-display-lg text-headline-sm font-bold text-on-surface mb-6">DDK Technologies &amp; Co.</div>
 <p class="font-body-md text-on-secondary-container opacity-70">
@@ -143,7 +148,7 @@
 <div>
 <h4 class="font-label-caps text-label-caps text-primary mb-6">LEGAL</h4>
 <div class="flex flex-col gap-4">
-<a class="font-body-md text-on-secondary-container hover:text-primary transition-colors cursor-pointer" href="#">Privacy Policy</a>
+<a class="font-body-md text-on-secondary-container hover:text-primary transition-colors cursor-pointer" href="privacy-policy.html">Privacy Policy</a>
 <a class="font-body-md text-on-secondary-container hover:text-primary transition-colors cursor-pointer" href="#">Terms of Service</a>
 </div>
 </div>
