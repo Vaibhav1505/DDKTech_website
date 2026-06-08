@@ -34,37 +34,29 @@
 </head>
 <body class="bg-background text-on-background font-body-md">
 <!-- Top Navigation Bar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-outline-variant/10 shadow-sm">
-<div class="flex justify-between items-center h-16 px-margin-desktop max-w-container-max mx-auto">
-<div class="flex items-baseline gap-3 select-none">
-  <!-- Core Monospace/Grotesque Wordmark -->
-  <span class="font-sans text-xl font-black tracking-tight text-on-surface uppercase">
-    DDK
-  </span>
-  
-  <!-- Single Technical Splitter -->
-  <span class="text-zinc-400 text-sm mx-0.5 select-none">/</span>
-  
-  <!-- Minimal Subtext Descriptor -->
-  <span class="font-sans text-[10px] font-normal tracking-[0.3em] text-zinc-500 uppercase">
-    Technologies & Co.
-  </span>
-</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="services.html">Services</a>
-<a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="products.html">Products</a>
-<a class="font-body-md text-body-md text-primary font-semibold border-b-2 border-primary" href="about.html">About</a>
-<div class="flex items-center gap-2">
-<a href="contact.html"><button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-body-md text-body-md hover:opacity-80 active:scale-95 transition-all">Contact</button></a>
-<button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-2xl">menu</span></button>
-</div>
-</div>
-<!-- Mobile Menu Icon (Placeholder) -->
-<button class="md:hidden p-2 text-on-surface">
-<span class="material-symbols-outlined">menu</span>
-</button>
-</div>
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-outline-variant/10 shadow-sm h-16 transition-all duration-300">
+  <div class="flex justify-between items-center h-full px-4 md:px-8 max-w-7xl mx-auto">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-baseline gap-3 select-none hover:opacity-80 transition-opacity">
+      <span class="font-sans text-xl font-black tracking-tight text-on-surface uppercase">DDK</span>
+      <span class="text-zinc-400 text-sm mx-0.5 select-none">/</span>
+      <span class="font-sans text-[10px] font-normal tracking-[0.3em] text-zinc-500 uppercase hidden sm:block">Technologies & Co.</span>
+    </a>
+    
+    <!-- Desktop Links -->
+    <div class="hidden md:flex items-center gap-8">
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="services.html">Services</a>
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="products.html">Products</a>
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="about.html">About</a>
+    </div>
+
+    <!-- Right Actions -->
+    <div class="flex items-center gap-4">
+      <a href="contact.html" class="hidden sm:block"><button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-body-md text-body-md hover:opacity-80 active:scale-95 transition-all">Contact</button></a>
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-2xl">menu</span></button>
+    </div>
+  </div>
 </nav>
 <!-- Hero Section -->
 <header class="pt-48 pb-section-gap px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto text-center md:text-left">

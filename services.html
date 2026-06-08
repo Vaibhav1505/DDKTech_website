@@ -44,26 +44,33 @@
 </head>
 <body class="bg-background text-on-background font-body-md">
 <!-- TopNavBar -->
-<nav class="fixed top-0 w-full z-50 bg-surface/70 dark:bg-surface-container-highest/70 backdrop-blur-xl border-b border-outline-variant/10 shadow-sm">
-<div class="flex justify-between items-center h-16 px-margin-desktop max-w-container-max mx-auto">
-<div class="font-display-lg text-headline-sm font-bold text-on-surface dark:text-on-surface-variant">
-                DDK Technologies &amp; Co.
-            </div>
-<div class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md" href="index.html">Home</a>
-<a class="text-primary dark:text-primary-fixed font-semibold border-b-2 border-primary font-body-md text-body-md" href="services.html">Services</a>
-<a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md" href="products.html">Products</a>
-<a class="text-on-surface-variant dark:text-outline hover:text-primary dark:hover:text-primary-fixed transition-colors font-body-md text-body-md" href="about.html">About</a>
-</div>
-<div class="flex items-center gap-2">
-<a href="contact.html"><button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-body-md text-body-md hover:opacity-80 transition-all duration-300 active:scale-95">Contact</button></a>
-<button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-2xl">menu</span></button>
-</div>
-</div>
+<nav class="fixed top-0 w-full z-50 bg-surface/70 backdrop-blur-xl border-b border-outline-variant/10 shadow-sm h-16 transition-all duration-300">
+  <div class="flex justify-between items-center h-full px-4 md:px-8 max-w-7xl mx-auto">
+    <!-- Logo -->
+    <a href="index.html" class="flex items-baseline gap-3 select-none hover:opacity-80 transition-opacity">
+      <span class="font-sans text-xl font-black tracking-tight text-on-surface uppercase">DDK</span>
+      <span class="text-zinc-400 text-sm mx-0.5 select-none">/</span>
+      <span class="font-sans text-[10px] font-normal tracking-[0.3em] text-zinc-500 uppercase hidden sm:block">Technologies & Co.</span>
+    </a>
+    
+    <!-- Desktop Links -->
+    <div class="hidden md:flex items-center gap-8">
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="index.html">Home</a>
+      <a class="font-body-md text-body-md text-primary font-semibold border-b-2 border-primary" href="services.html">Services</a>
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="products.html">Products</a>
+      <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary transition-colors" href="about.html">About</a>
+    </div>
+
+    <!-- Right Actions -->
+    <div class="flex items-center gap-4">
+      <a href="contact.html" class="hidden sm:block"><button class="bg-primary text-on-primary px-6 py-2 rounded-xl font-body-md text-body-md hover:opacity-80 active:scale-95 transition-all">Contact</button></a>
+      <button id="mobile-menu-btn" class="md:hidden p-2 text-on-surface hover:text-primary transition-colors"><span class="material-symbols-outlined text-2xl">menu</span></button>
+    </div>
+  </div>
 </nav>
 <main class="pt-32">
 <!-- Hero Section -->
-<section class="max-w-container-max mx-auto px-margin-desktop mb-section-gap">
+<section class="max-w-container-max mx-auto px-4 md:px-8 mb-section-gap">
 <div class="max-w-3xl">
 <span class="font-label-caps text-label-caps text-primary tracking-widest uppercase mb-4 block">Specialized Solutions</span>
 <h1 class="font-display-lg text-display-lg text-on-surface mb-6">High-fidelity engineering for forward-thinking brands.</h1>
@@ -71,10 +78,10 @@
 </div>
 </section>
 <!-- Services Bento Grid -->
-<section class="max-w-container-max mx-auto px-margin-desktop mb-section-gap">
+<section class="max-w-container-max mx-auto px-4 md:px-8 mb-section-gap">
 <div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
 <!-- Website Development -->
-<div class="md:col-span-8 group relative overflow-hidden glass-card rounded-[24px] p-10 transition-all duration-500 hover:-translate-y-1">
+<div class="md:col-span-8 group relative overflow-hidden glass-card rounded-[24px] p-6 md:p-10 transition-all duration-500 hover:-translate-y-1">
 <div class="flex flex-col h-full">
 <div class="mb-8 w-12 h-12 flex items-center justify-center rounded-full bg-primary/10 text-primary">
 <span class="material-symbols-outlined text-3xl">language</span>
@@ -94,7 +101,7 @@
 </div>
 </div>
 <!-- Small Callout Card -->
-<div class="md:col-span-4 bg-primary rounded-[24px] p-10 flex flex-col justify-between text-on-primary shadow-lg shadow-primary/20">
+<div class="md:col-span-4 bg-primary rounded-[24px] p-6 md:p-10 flex flex-col justify-between text-on-primary shadow-lg shadow-primary/20">
 <h3 class="font-headline-sm text-headline-sm">Ready to elevate your digital presence?</h3>
 <div class="flex flex-col gap-6">
 <p class="font-body-md text-body-md opacity-90">Let's discuss how our precision engineering can solve your unique challenges.</p>
@@ -120,7 +127,7 @@
 </div>
 </div>
 <!-- App Development -->
-<div class="md:col-span-8 glass-card rounded-[24px] p-10 flex flex-col md:flex-row gap-10 group">
+<div class="md:col-span-8 glass-card rounded-[24px] p-6 md:p-10 flex flex-col md:flex-row gap-6 md:p-10 group">
 <div class="flex-1 flex flex-col">
 <div class="mb-8 w-12 h-12 flex items-center justify-center rounded-full bg-secondary-container text-on-secondary-container">
 <span class="material-symbols-outlined text-3xl">devices</span>
@@ -147,7 +154,7 @@
 </div>
 </section>
 <!-- Process Section -->
-<section class="max-w-container-max mx-auto px-margin-desktop mb-section-gap py-section-gap bg-surface-container-lowest rounded-[40px] border border-outline-variant/5">
+<section class="max-w-container-max mx-auto px-4 md:px-8 mb-section-gap py-section-gap bg-surface-container-lowest rounded-[40px] border border-outline-variant/5">
 <div class="text-center max-w-2xl mx-auto mb-16">
 <h2 class="font-display-lg text-headline-md text-on-surface mb-4">How We Work</h2>
 <p class="font-body-md text-body-md text-on-surface-variant">A disciplined approach to technical execution and creative delivery.</p>
@@ -173,7 +180,7 @@
 </main>
 <!-- Footer -->
 <footer class="w-full py-section-gap bg-surface-container-lowest dark:bg-surface-container-highest border-t border-outline-variant/20">
-<div class="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-gutter px-margin-desktop max-w-container-max mx-auto">
+<div class="relative z-10 grid grid-cols-1 md:grid-cols-4 gap-gutter px-4 md:px-8 max-w-container-max mx-auto">
 <div class="md:col-span-1">
 <div class="font-display-lg text-headline-sm font-bold text-on-surface mb-4">
                     DDK Technologies &amp; Co.
@@ -207,7 +214,7 @@
 </ul>
 </div>
 </div>
-<div class="max-w-container-max mx-auto px-margin-desktop mt-20 pt-8 border-t border-outline-variant/10 text-center md:text-left">
+<div class="max-w-container-max mx-auto px-4 md:px-8 mt-20 pt-8 border-t border-outline-variant/10 text-center md:text-left">
 <p class="font-body-md text-body-md text-on-secondary-container opacity-60">
                 © 2026 DDK Technologies &amp; Co. All rights reserved
             </p>
